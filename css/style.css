@@ -78,6 +78,38 @@ body {
 	object-fit: cover;
 }
 
+.header-block {
+	text-align: center;
+	letter-spacing: 0.2px;
+}
+
+.header-block__title {
+	line-height: 142%;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.header-block__title:not(:last-child) {
+	padding-bottom: 10px;
+}
+
+@media (max-width:992px) {
+	.header-block__title {
+		font-size: 35px;
+	}
+}
+
+@media (max-width:767px) {
+	.header-block__title {
+		font-size: 30px;
+	}
+}
+
+.header-block__subtitle {
+	color: #737373;
+	line-height: 142%;
+}
+
 /* =================HEADER====================================== */
 .header {
 	position: absolute;
@@ -172,6 +204,9 @@ body {
 	/*наложение блоков на блок повыше*/
 }
 
+.page__advantages {}
+
+/* ---------------------------main block---------------------------------------- */
 
 .main-block {
 	position: relative;
@@ -383,5 +418,124 @@ body {
 	line-height: 143%;
 	color: #737373;
 }
+
+/* ----------------------Advantages Block----------------------------------- */
+
+.advantages {
+	padding: 80px 0;
+}
+
+@media (max-width: 992px) {
+	.advantages {
+		padding: 50px 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.advantages {
+		padding: 40px 0;
+	}
+}
+
+.advantages__container {}
+
+.advantages__header {
+	margin-bottom: 50px;
+}
+
+@media(max-width:767px) {
+	.advantages__header {
+		margin-bottom: 25px;
+	}
+}
+
+.advantages__body {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -15px -30px;
+}
+
+.advantages__column {
+	padding: 0px 15px;
+	margin-bottom: 30px;
+	flex: 0 1 25%;
+}
+
+@media (max-width: 1020px) {
+	.advantages__column {
+		flex: 0 1 50%;
+	}
+}
+
+@media (max-width: 560px) {
+	.advantages__column {
+		flex: 0 1 100%;
+	}
+}
+
+.advantages__item {
+	font-weight: 700;
+	background-color: #fff;
+	padding: 30px;
+	text-align: center;
+}
+
+.advantages__item>*:not(:last-child) {
+	margin: 0 0 10px 0;
+}
+
+.advantages__icon {
+	/* выравниваем высоту иконок по самому высокому элементу */
+	height: 48px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.advantages__value {
+	font-size: 40px;
+	line-height: 142%;
+	letter-spacing: 0.2px;
+}
+
+.advantages__text {
+	font-size: 16px;
+	color: #737373;
+	line-height: calc(24/16*100%);
+	letter-spacing: 0.1px;
+}
+
+/* ---------------------------------practice block---------------- */
+.page__practice {}
+
+.practice {}
+
+.practice__container {}
+
+.practice__header {}
+
+.header-block {}
+
+.header-block__title {}
+
+.header-block__subtitle {}
+
+.practice__body {}
+
+.practice__column {}
+
+.practice__item {}
+
+.item-practice {}
+
+.item-practice__link {}
+
+.item-practice__title {}
+
+.item-practice__text {}
+
+.item-practice__img {}
+
+._ibg {}
 
 /*-------------------------------------FOOTER----------------------------------------------*/
