@@ -208,6 +208,8 @@ body {
 
 .page__practice {}
 
+.page__whoweare {}
+
 
 /* ---------------------------main block---------------------------------------- */
 
@@ -609,5 +611,103 @@ body {
 	padding: 0 0 60% 0;
 }
 
+/* ------------------------------Who We Are ---------------------------------------------- */
+.whoweare {
+	padding: 80px 0 130px 0;
+}
+
+.whoweare__container {}
+
+.whoweare__header {
+	margin: 0 0 100px 0;
+}
+
+.whoweare__body {
+	display: flex;
+}
+
+.whoweare__video {
+	flex: 0 0 57%;
+	position: relative;
+	padding: 0 0 42.26% 0;
+	/* привожу размер видео в соответствии с макетом */
+}
+
+.whoweare__video iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	/* привожу размер видео в соответствии с макетом */
+}
+
+.whoweare__content {
+	flex: 1 1 auto;
+	padding: 20px 0 0 121px;
+}
+
+.whoweare__title {
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 142%;
+}
+
+.whoweare__title:not(:last-child) {
+	margin: 0 0 10px 0;
+}
+
+.whoweare__text {
+	color: #737373;
+	line-height: 142%;
+}
+
+.whoweare__top:not(:last-child) {
+	margin: 0 0 50px 0;
+}
+
+.whoweare__items {
+	margin: 50px 0 0 0;
+}
+
+.whoweare__item {}
+
+.whoweare__item:not(:last-child) {
+	margin: 0 0 30px 0;
+}
+
+.item-whoweare {
+	display: flex;
+}
+
+.item-whoweare__icon {
+	flex: 0 0 32px;
+}
+
+.item-whoweare__body {
+	flex: 1 1 auto;
+	padding: 0 0 0 20px;
+	;
+}
+
+.item-whoweare__title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+}
+
+.item-whoweare__title:not(:last-child) {
+	margin: 0 0 5px 0;
+}
+
+.item-whoweare__text {
+	color: #737373;
+	line-height: 142%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 225px;
+}
 
 /*-------------------------------------FOOTER----------------------------------------------*/
